@@ -1,0 +1,264 @@
+.flex-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.flex-item {
+  background: #fff;
+  padding: 5px;
+  width:;
+  height: 120px;
+  margin-top: -10px;
+  line-height: 120px;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  text-align:start;
+}
+.container { 
+  display: flex;
+}
+.wblok  {
+  background: white;
+  display: flex;  
+  margin-top: -10px;
+  line-height: 120000px;
+  flex-direction: column;
+}
+    
+body {
+		background-image: "evgenyi.jpg"; 
+        background-repeat: no-repeat; 
+        background-position: top center;
+        background-attachment: fixed;
+        background-size: 95%;
+}
+main {
+     color: aliceblue;
+    
+}
+.vobla {
+    flex-direction: column;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:;
+    padding: 0px;
+    margin: 50px;
+    list-style: none;
+    font-size: 40px;
+}
+
+.vobla1 {
+    flex-direction: column;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content:;
+    padding: 0px;
+    margin: 50px;
+    list-style: none;
+    font-size: 40px;
+}
+
+
+
+.home {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-self: flex-start;
+    padding-top: 5px;
+    width: 220px ;
+    height: 10px;
+    margin-top: 10px;
+    line-height: 0px;
+    color: white;
+    font-weight: bold;
+    font-size: 3em;
+}
+
+.sblok  {
+  background: black;
+  display: flex;  
+  margin-top: 100px;
+  line-height: 30px;
+  flex-direction: column;
+}
+p {
+    width: auto; 
+    height:auto; 
+    position: relative; 
+    top:0px; 
+    left: 0px; 
+    font-size: 20px;
+    background:;
+    text-align: center;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: 1%;
+}
+/* скрываем чекбокс */
+#menu__toggle {
+  opacity: 0;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+  transform: rotate(135deg);
+}
+#menu__toggle:checked ~ .menu__btn > 
+span::before {
+  top: 0;
+  transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > 
+span::after {
+  top: 0;
+  transform: rotate(90deg);
+}
+#menu__toggle:checked ~ .menu__box {
+  visibility: visible;
+  top: 0;
+}
+
+.btn1{
+      text-decoration: none;
+  color: aliceblue
+}
+
+.btn:hover {
+  color: #99ff99;
+}
+
+.menu__btn {
+  display: flex;
+  align-items: center;
+  text-align: center;  
+  position: fixed;
+  top: 20px;
+  left: 20px;
+
+  width: 26px;
+  height: 66px;
+
+  cursor: pointer;
+  z-index: 1;
+}
+/* стиль кнопки гамбургера */
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #616161;
+  transition-duration: .25s;
+}
+.menu__btn > span::before {
+  content: '';
+  top: -8px;
+}
+.menu__btn > span::after {
+  content: '';
+  top: 8px;
+}
+/* меню гамбургера */
+.menu__box {
+    display: block;
+    position:relative;
+    position: absolute;
+    top: 55px;
+    left: 0;
+    top: -100%;
+    width: 100%;
+    padding-left: 0px;
+    padding: 10px;
+    padding-top: 0px;
+    list-style: none;
+    background-color: #fff;
+    box-shadow: 1px 0px 6px rgba(0, 0, 0, .2);
+    transition-duration: .25s;
+    }
+
+.menu__item {
+    display: block;
+    padding: 5px;
+    color: #333;
+    font-size: 30px;
+    font-weight: 100px;
+    border: 10px;
+    border-color: black;
+    text-decoration: none;
+    transition-duration: .25s;
+    text-align: center;
+}
+.menu__item:hover {
+  background-color: #CFD8DC;
+}
+
+@media (max-width: 575px){
+    .container{
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+    
+    .vobla {
+        flex-direction: column;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:;
+        padding: 0px;
+        margin: 50px;
+        list-style: none;
+        font-size: 40px;
+    }
+    .vobla1 {
+        flex-direction: column;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content:;
+        padding: 0px;
+        margin: 10px;
+        list-style: none;
+        font-size: 20px;
+        }
+    .flex-container {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        }
+
+    .flex-item {
+        background: #fff;
+        padding: 5px;
+        width: ;
+        height: 120px;
+        margin-top: -10px;
+        line-height: 120px;
+        color: white;
+        font-weight: bold;
+        font-size: 3em;
+        text-align: center;
+        }
+    .container { 
+        display: flex;
+        }
+    .wblok  {
+        background: white;
+        display: flex;  
+        margin-top: -10px;
+        line-height: 120000px;
+        flex-direction: column;
+        }
+}
